@@ -1,0 +1,36 @@
+/* Reset CSS*/
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700&display=swap');
+/* font-family: 'Noto Sans KR', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+/* font-family: 'Roboto', sans-serif; */
+@font-face{font-family: 'pixel'; src: url(./font/KiwiSoda.ttf);}
+
+*{ margin:0; padding:0; border:0; outline:0; vertical-align:top;}
+html{font-size: 16px;}
+body{font-family:'Roboto', sans-serif; font-weight: 400; color:#333;}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {display:block;}
+ul, ol, dl{list-style:none;}
+img, video{border:0; vertical-align:top;}
+a{color:#333; text-decoration:none; display: block;}
+table{border-collapse:collapse; border-spacing:0;}
+input, select{ vertical-align:middle;}
+label{cursor:pointer;}
+.blind,legend,hr,caption{display:block; overflow:hidden; position:absolute; top:0; left:-1000em;}
+i,em,address{font-style:normal; font-weight:normal;}
+p,li,dd{line-height:1.5em}
+.hidden{display: block; position: absolute; left:-1000%; top:0; width: 1px; height: 1px;
+    overflow: hidden; color: #fff;}
+div, section{box-sizing: border-box;}
+
+/* .header{width: 500px; height: 300px; background: red;} */
+/* .nav_menu{margin: 0 auto; width: 90%; background: blue;} */
+#menu{left: 23%; margin-top: 40px; width: 1000px; position:fixed; z-index: 70; display: flex; justify-content: space-between;}
+#menu li {font-weight: 500; margin: 0 auto;
+    /* display:inline-block; */}
+#menu li.active{color: #F12A37;}
+#menu li a{text-decoration:none;}
+#menu li.active a:hover{color: #F12A37;}
+/* #menu li a, #menu li.active a{padding: 9px 18px;} */
+#menu li.active a{color: #F12A37;}
+
+
