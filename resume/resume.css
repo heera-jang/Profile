@@ -31,7 +31,6 @@ img { border: 0; vertical-align: top; width: 100%;}
 .wrap { overflow: hidden;}
 
 /* header */
-/* header { border-bottom: 1px solid #999; } */
 header .image {overflow: hidden; margin: 0 auto; width: 20%; border-radius: 50%;}
 header .head_main {display: flex; flex-direction: column; padding: 5% 10%; column-gap: 10%; text-align: center;}
 header .head_ttl h2 { font-size: 3rem; margin-top: 20px;}
@@ -39,10 +38,6 @@ header .head_ttl>span { display: block; font-size: 1.25rem; font-weight: 400; ma
 header .head_ttl strong { font-weight: 400;}
 .head_ttl p{transition: all .5s ease-out;}
 
-/* .head_ttl .pf_box{display: flex; margin: 0 auto; width: 570px;}
-.head_ttl .pf_box p:nth-of-type(1){width: 15px; height: 120px; background: #F12A37;}
-.head_ttl .pf_box p:nth-of-type(2){font-weight: 600;font-size: 1.1rem; padding-top: 50px; width: 560px;
-    height: 120px; margin: 0 auto; background: #D3EDFB;} */
 .head_ttl .a{background-color: thistle; font-size: 1.2rem; font-weight: 500;}
 .head_ttl .link{border-radius: 30px; border: 1.5px solid #ccc;  padding: 10px;
     margin: 0 auto; margin-top: 20px; width: 40%;}
@@ -72,26 +67,26 @@ header .head_ttl strong { font-weight: 400;}
 #contentArea .portfolio .toggle-container li dd:hover a{background: thistle;}
 
 .meBox{width: 50%; border: 2px solid thistle; margin: 20px auto; padding: 20px; display: flex; justify-content: space-around;}
-
+.meBox p:nth-of-type(1){padding-right: 10%; border-right: 2px solid thistle;}
 
 /* footer */
 footer .footer_inner { background: #333; color: #fff; text-align: center; padding: 20px 0;}
 footer .footer_inner p { font-weight: 400; }
-/* footer .footer_inner a { display:flex; color: #666;; justify-content: center; margin: 20px 0; padding: 10px; overflow: hidden; transition: all .5s; align-items: center;}
-footer .footer_inner a:hover { color: #fff}
-footer .footer_inner a i { transition: all 1s; font-size: 3rem; margin: 0 10px;}
-footer .footer_inner a:hover i { color: #fff; transform: translateX(10px) translateY(-70px);} */
+
 
 @media screen and (max-width:1024px) {
     header .image { margin: 0 auto; width: 50%;}
-    .head_ttl p:nth-of-type(2){width: 70%;}
+    .head_ttl .link{width: 70%;}
+    .meBox{width: 70%;}
     #contentArea .toggle-container dl { display: block;}
     #contentArea .toggle-container dt, #contentArea .toggle-container dd {width: auto;}
     #contentArea .toggle-container dt { margin: 0 0 20px 0; }
 }
 @media screen and (max-width:768px) {
     .head_ttl .pf_box{display: flex; margin: 0 auto; width: 450px;}
-    .head_ttl p:nth-of-type(2){width: 80%;}
+    .head_ttl .link{width: 80%;}
+    .meBox{flex-direction: column; width: 50%;}
+    .meBox p:nth-of-type(1){border: none;}  
 }
 @media screen and (max-width:640px) {
     header .head_main { display: block; text-align: center;}
