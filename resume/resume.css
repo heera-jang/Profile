@@ -80,7 +80,7 @@ footer .footer_inner p { font-weight: 400; }
     .meBox{width: 70%;}
     #contentArea .toggle-container dl { display: block;}
     #contentArea .toggle-container dt, #contentArea .toggle-container dd {width: auto;}
-    #contentArea .toggle-container dt { margin: 0 0 20px 0; }
+    #contentArea .toggle-container dt { margin: 0 0 20px 0;}
 }
 @media screen and (max-width:768px) {
     .head_ttl .pf_box{display: flex; margin: 0 auto; width: 450px;}
