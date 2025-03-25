@@ -31,7 +31,7 @@ img { border: 0; vertical-align: top; width: 100%;}
 .wrap { overflow: hidden;}
 
 /* header */
-header .image {overflow: hidden; margin: 0 auto; width: 20%; border-radius: 50%;}
+header .image {overflow: hidden; margin: 0 auto; width: 20%; border-radius: 50%}
 header .head_main {display: flex; flex-direction: column; padding: 5% 10%; column-gap: 10%; text-align: center;}
 header .head_ttl h2 { font-size: 3rem; margin-top: 20px;}
 header .head_ttl>span { display: block; font-size: 1.25rem; font-weight: 400; margin-bottom: 20px;}
