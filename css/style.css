@@ -1,3 +1,28 @@
+@keyframes ani {
+    0% {
+        transform: rotate(-5deg);
+   }
+   100% {
+    transform: rotate(10deg);
+ }
+}
+@keyframes ani2 {
+    0% {
+     
+   }
+   100% {
+    transform: rotate(180deg);
+ }
+}
+@keyframes ani3 {
+    0% {
+        transform: translateX(-8%);
+    }
+    100% {
+        transform: translateX(10%);
+
+  }
+}
 
 /* HOME */
 body{max-width: 2000px; min-width: 1900px; margin: 0 auto;}
@@ -20,9 +45,9 @@ body{max-width: 2000px; min-width: 1900px; margin: 0 auto;}
 
 .sketch{position: relative;}
 .sketch img{position: absolute; }
-.sketch img:nth-of-type(1){bottom: 130px; right: 335px;}
-.sketch img:nth-of-type(2){bottom: -55px; right: 490px;}
-.sketch img:nth-of-type(3){bottom: 10px; right: 275px;}
+.sketch img:nth-of-type(1){bottom: 110px; right: 335px; animation: ani 1s infinite alternate;}
+.sketch img:nth-of-type(2){bottom: -55px; right: 490px; animation: ani2 5s infinite alternate;}
+.sketch img:nth-of-type(3){bottom: 10px; right: 275px; animation: ani3 1s infinite alternate;}
 
 
 /* PROFILE */
@@ -58,6 +83,7 @@ body{max-width: 2000px; min-width: 1900px; margin: 0 auto;}
 .img_box{width:40%; float: left; margin-right: 3%; position: relative;}
 .img_box .pc{position:relative;left: 0; top:0; z-index: 10; width: 100%;}
 .img_box .gif{position:absolute; left: 2%; top:4%; width: 96%;}
+
 
 
 /* WEB */
@@ -101,12 +127,20 @@ body{max-width: 2000px; min-width: 1900px; margin: 0 auto;}
 /* SPA - mobile */
 .start{z-index: 100; position: absolute; top: 240px; left: 190px; width: 70%; height: 200px; background: #F12A37;padding: 50px; color: #fff; font-size: 5rem; font-weight: 500;}
 
+.mobile_img_box{width:40%; float: left; margin-right: 3%; position: relative; margin-left: 5%;}
+.mobile_img_box .mobile{position: relative; left: 0; top: 0; z-index: 10; width: 60%;}
+.mobile_img_box .mobile_gif{position: absolute; left: 3.1%; top: 4%; width: 55%; z-index: 2;}
+.mobile_img_box .mobile_img{transform: rotate(9deg); position: absolute; left: 50%;
+    top: 14%; width: 48%; z-index: 1;}
+
 .mobileWeb{padding: 70px; display: flex; align-items: center;}
 .mobileWeb .text_box{width: 56%; margin-left: 15px;}
 .mobileWeb .text_box>p{font-size: 1.1rem; font-weight: 500;}
 
+.mobileWeb .textBox1 img{padding-bottom: 10px; margin-left: 75px; width: 13%;}
+
 .mobileWeb .textBox1{display: flex; align-items: center; gap: 40px; margin-bottom: 20px; border-bottom: 2px solid #ccc;}
-.mobileWeb .textBox1 p:nth-of-type(1){font-weight: 500; font-size: 3rem; }
+.mobileWeb .textBox1 p:nth-of-type(1){font-weight: 500; font-size: 2rem; }
 .mobileWeb .textBox1 p:nth-of-type(2) a{border-radius: 10px; margin-top: 7px; padding: 5px 20px;border: 1px solid #ccc;
     transition: all .5s ease-out;}
 .mobileWeb .textBox1 p:nth-of-type(2):hover a{background: #F4911D; color: #fff;}
@@ -135,8 +169,6 @@ body{max-width: 2000px; min-width: 1900px; margin: 0 auto;}
 
 
 /* 반응형  */
-/* .respon .img_box .responPc{width: 100%;}
-.respon .img_box .responGif{height: 67%;} */
 .respon .topMove {margin-bottom: 70px;}
 .respon{padding: 70px; display: flex; align-items: center;}
 .respon .text_box{width: 49%; margin-left:95px;}
